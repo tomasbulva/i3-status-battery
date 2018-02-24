@@ -9,12 +9,13 @@ describe('Module Starter', () => {
     describe('#constructor', () => {
         it('should construct and store custom options', () => {
             var block = new Starter({
-                text: 'Peter',
-                secretValue: 'nonEncryptedSecret'
+                
             });
 
-            expect(block.text).to.equal('Peter');
-            expect(block.secretValue).to.equal('nonEncryptedSecret');
+
+            //console.log('block',block);
+            expect(block.charging).to.equal(false);
+            expect(block.colors.charging).to.equal('#aded89');
         });
     });
 

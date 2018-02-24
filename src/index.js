@@ -11,10 +11,6 @@ export default class Battery extends EventEmitter {
         options = options || {};
         this.output = output || {};
 
-        //custom config
-        this.text = options.text || '';
-        this.secretValue = options.secretValue;
-
         this.charging = false;
         this.colors = {
             charging: '#aded89',//'#e1fce0',
